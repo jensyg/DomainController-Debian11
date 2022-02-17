@@ -2,33 +2,35 @@
 #   17 Fevereiro 2022
 #   Atualização do Sistema
 
-    apt update
-    
-    apt install -y net-tools
-    
-    apt install -y openssh-server
-    
-    apt install -y vim
-
-    apt list --upgradable
-
-    apt upgrade
-
-    apt dist-upgrade
-
-    apt full-upgrade
-    
-    apt autoremove
-
-    apt autoclean
-
-    apt clean
-
-    cat /etc/os-release
-    
-    #  Servico_SSH () {}
+#  Servico_SSH () {}
     
 	echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 	/etc/init.d/ssh restart
+
+
+	apt update
+    
+    	apt install -y net-tools
+    
+   	apt install -y openssh-server
+    
+    	apt install -y vim
+
+    	apt list --upgradable
+
+    	apt -y upgrade
+
+    	apt dist-upgrade
+
+    	apt full-upgrade
+    
+ 	apt autoremove
+
+    	apt autoclean
+
+    	apt clean
+
+    	cat /etc/os-release
+    		
     
   
