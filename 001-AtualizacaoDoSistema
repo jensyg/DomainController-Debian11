@@ -3,6 +3,10 @@
 #   Atualização do Sistema
 
     sudo apt update
+    
+    sudo apt install -y net-tools
+    
+    sudo apt install -y openssh-server
 
     sudo apt list --upgradable
 
