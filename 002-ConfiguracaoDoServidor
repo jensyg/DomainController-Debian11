@@ -21,7 +21,7 @@ EOF
 cat << EOF > /etc/resolv.conf
 	# Gerado pelo script Systech -- Soluçoes em TI
 	
-  domain systech.brz
+  	domain systech.brz
 	search systec.brz
 	nameserver 127.0.0.1
 EOF
@@ -43,7 +43,7 @@ cat << EOF > /etc/network/interfaces
 		iface ens18 inet static
 		address 173.169.73.1
 		netmask 255.255.255.0
-    network 173.169.73.0
+    		network 173.169.73.0
 		gateway 173.169.73.254
 EOF
 
