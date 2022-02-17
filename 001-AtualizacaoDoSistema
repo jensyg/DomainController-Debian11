@@ -2,28 +2,28 @@
 #   17 Fevereiro 2022
 #   Atualização do Sistema
 
-    sudo apt update
+    apt update
     
-    sudo apt install -y net-tools
+    apt install -y net-tools
     
-    sudo apt install -y openssh-server
+    apt install -y openssh-server
     
     apt install -y vim
 
-    sudo apt list --upgradable
+    apt list --upgradable
 
-    sudo apt upgrade
+    apt upgrade
 
-    sudo apt dist-upgrade
+    apt dist-upgrade
 
-    sudo apt full-upgrade
+    apt full-upgrade
     
-    sudo apt autoremove
+    apt autoremove
 
-    sudo apt autoclean
+    apt autoclean
 
-    sudo apt clean
+    apt clean
 
-    sudo cat /etc/os-release
+    cat /etc/os-release
     
-    sudo cat /etc/lsb-release
+  
