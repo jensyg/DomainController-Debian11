@@ -12,8 +12,8 @@ EOF
 cat << EOF > /etc/hosts
 	# Gerado pelo script Systech -- Soluçoes em TI
 
-  127.0.0.1 	localhost 
-	127.0.0.1	  DebianDC01.systech.brz  DebianDC01
+  	127.0.0.1 	localhost 
+	127.0.0.1	DebianDC01.systech.brz  DebianDC01
 EOF
 
 
