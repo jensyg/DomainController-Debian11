@@ -1,0 +1,82 @@
+# Arquivo_Hostname () {}
+
+cat <<EOF > /etc/hostname
+  # Gerado pelo script Systech -- Soluçoes em TI
+  
+  DebianDC01
+EOF
+
+
+
+# Arquivo_Hosts () {}
+cat << EOF > /etc/hosts
+	# Gerado pelo script Systech -- Soluçoes em TI
+
+  127.0.0.1 	localhost 
+	127.0.0.1	  DebianDC01.systech.brz  DebianDC01
+EOF
+
+
+# Arquivo_Resolv_Conf () {}
+cat << EOF > /etc/resolv.conf
+	# Gerado pelo script Systech -- Soluçoes em TI
+	
+  domain systech.brz
+	search systec.brz
+	nameserver 127.0.0.1
+EOF
+
+
+
+
+# Arquivo_Interfaces () {
+cat << EOF > /etc/network/interfaces
+	# Gerado pelo script Systech -- Soluçoes em TI
+	# The loopback network interface
+	
+  source /etc/network/interfaces.d/*	
+	
+	auto lo
+	iface lo inet loopback
+	
+	  allow-hotplug ens18
+		iface ens18 inet static
+		address 173.169.73.1
+		netmask 255.255.255.0
+    network 173.169.73.0
+		gateway 173.169.73.254
+EOF
+
+
+# Arquivo_nsswitch () {}
+
+cat << EOF > /etc/nsswitch.conf
+
+
+
+# Gerado pelo script Systech -- Soluçoes em TI
+
+
+
+passwd:         compat winbind
+group:          compat winbind
+shadow:         compat
+gshadow:        files
+
+hosts:          files dns
+networks:       files
+
+protocols:      db files
+services:       db files
+ethers:         db files
+rpc:            db files
+
+netgroup:       nis
+
+
+
+EOF
+
+
+
+
