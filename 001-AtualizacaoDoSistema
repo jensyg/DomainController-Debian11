@@ -26,4 +26,9 @@
 
     cat /etc/os-release
     
+    #  Servico_SSH () {}
+    
+	echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+	/ssh/init.d/ssh restart
+    
   
